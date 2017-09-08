@@ -3,7 +3,6 @@ import { computed } from "@ember/object"
 import { next } from '@ember/runloop';
 import layout from './template';
 import RecognizerMixin from 'ember-gestures/mixins/recognizers';
-import $ from 'jquery';
 
 export default Component.extend(RecognizerMixin, {
   layout,
@@ -13,8 +12,6 @@ export default Component.extend(RecognizerMixin, {
 
   labelDisabled: false,
   recognizers: 'pan',
-
-  $document: computed(() => $(document)),
 
   effectiveForId: computed('forId', 'labelDisabled', function() {
     return this.get('labelDisabled') ? null : this.get('forId');
@@ -47,7 +44,7 @@ export default Component.extend(RecognizerMixin, {
 
     this.set('labelDisabled', true);
 
-    this.get('$document').one('mouseup', () => {
+    document.addEventListener('mouseup', () => {
       next(() => this.set('labelDisabled', false));
     })
   }

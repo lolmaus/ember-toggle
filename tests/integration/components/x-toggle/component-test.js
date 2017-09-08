@@ -190,10 +190,10 @@ if (emberVersionGTE(2, 0)) {
 
     const $toggle = this.$('.x-toggle-container');
 
-    $toggle.trigger('swiperight');
+    $toggle.trigger('panright');
     assert.equal(this.get('value'), true, 'swiping right should enable');
 
-    $toggle.trigger('swipeleft');
+    $toggle.trigger('panleft');
     assert.equal(this.get('value'), false, 'swiping left should disable');
   });
 }
