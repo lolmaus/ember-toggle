@@ -40,12 +40,14 @@ export default Component.extend(RecognizerMixin, {
     mouse button is released.
    */
   _disableLabelUntilMouseUp () {
-    if (this.get('labelDisabled')) return;
+    if (this.get('labelDisabled')) {
+      return;
+    }
 
     this.set('labelDisabled', true);
 
     document.addEventListener('mouseup', () => {
       next(() => this.set('labelDisabled', false));
-    })
+    });
   }
 });
