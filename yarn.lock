@@ -2566,13 +2566,14 @@ ember-factory-for-polyfill@^1.1.0:
   dependencies:
     ember-cli-version-checker "^1.2.0"
 
-ember-gestures@lolmaus/ember-gestures#bump-ember-hammertime-1.2.4:
-  version "0.4.5"
-  resolved "https://codeload.github.com/lolmaus/ember-gestures/tar.gz/462a56bee7a8e0bb718088fd5fbb0502179f1547"
+ember-gestures@^0.4.7:
+  version "0.4.7"
+  resolved "https://registry.yarnpkg.com/ember-gestures/-/ember-gestures-0.4.7.tgz#c17559622377515ec996fd4c17abce51e026f106"
   dependencies:
-    broccoli-funnel "^1.1.0"
+    broccoli-funnel "^2.0.1"
     broccoli-merge-trees "^2.0.0"
-    ember-cli-babel "^6.0.0"
+    broccoli-stew "^1.5.0"
+    ember-cli-babel "^6.8.2"
     ember-cli-htmlbars "^2.0.1"
     ember-cli-version-checker "^1.2.0"
     ember-getowner-polyfill "^1.2.3"
@@ -2587,7 +2588,7 @@ ember-getowner-polyfill@^1.2.3:
     ember-cli-version-checker "^1.2.0"
     ember-factory-for-polyfill "^1.1.0"
 
-ember-hammertime@^1.2.3:
+ember-hammertime@^1.2.4:
   version "1.2.4"
   resolved "https://registry.yarnpkg.com/ember-hammertime/-/ember-hammertime-1.2.4.tgz#33f540c1fe94df7dbfef6d256f400e0780905e10"
   dependencies:
